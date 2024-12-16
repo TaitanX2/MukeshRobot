@@ -388,14 +388,14 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             ),
         )
      elif query.data == "setup_guide":
-    query.message.edit_caption(
-        "「 〃 Setup Guide 〃 」\n\n"
-        "You can add me to your chatroom by clicking this and selecting the chat.\n\n"
-        "Read Admin Permissions and Anti-spam for basic information.\n\n"
-        "Read Setup Guide to learn about setting up the bot in detail. (Recommended)\n\n"
-        "If you do need help with further instructions, feel free to ask in @TaitanXSupportGroup.",
-        parse_mode=ParseMode.MARKDOWN,
-        reply_markup=InlineKeyboardMarkup(
+         query.message.edit_caption(
+         "「 〃 Setup Guide 〃 」\n\n"
+         "You can add me to your chatroom by clicking this and selecting the chat.\n\n"
+         "Read Admin Permissions and Anti-spam for basic information.\n\n"
+         "Read Setup Guide to learn about setting up the bot in detail. (Recommended)\n\n"
+         "If you do need help with further instructions, feel free to ask in @TaitanXSupportGroup.",
+         parse_mode=ParseMode.MARKDOWN,
+         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
@@ -412,7 +412,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
         ),
     )
     elif query.data == "admin_prm":
-    query.message.edit_caption(
+        query.message.edit_caption(
         "「 〃 Admin Permissions 〃 」\n\n"
         "To avoid slowing down, Akira caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the `/promote` command), Akira will only find out ~10 minutes later.\n\n"
         "If you want to update them immediately, you can use the `/admincache` or `/reload` command, that will force Akira to check who the admins are again and their permissions.\n\n"
