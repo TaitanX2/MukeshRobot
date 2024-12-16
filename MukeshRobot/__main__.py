@@ -77,6 +77,8 @@ PM_START_TEXT = """
 ✦ Click the button below to learn more how to use me*
 """
 
+SAITAMA_IMG = "https://files.catbox.moe/s1caf2.jpg"
+
 buttons = [
     [
         InlineKeyboardButton(text="About 𝖠𝗄𝗂𝗋𝖺", callback_data="mukesh_"),
@@ -192,24 +194,13 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            
-            x=update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAI33mLYLNLilbRI-sKAAob0P7koTEJNAAIOBAACl42QVKnra4sdzC_uKQQ")
-            x.delete()
-            usr = update.effective_user
-            lol = update.effective_message.reply_text(
-                PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
-            )
-            time.sleep(0.3)
-            lol.edit_text("❤")
-            time.sleep(0.2)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
-            time.sleep(0.2)
-            lol.delete()
-            update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-                reply_markup=InlineKeyboardMarkup(buttons),
+            update.effective_message.reply_photo(
+                SAITAMA_IMG,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), escape_markdown(context.bot.first_name),
+                ),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
+                disable_web_page_preview=True,
             )
     else:
         update.effective_message.reply_photo(
