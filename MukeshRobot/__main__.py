@@ -96,13 +96,23 @@ buttons = [
 ]
 
 HELP_STRINGS = f"""
-» *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
+*Main* commands available:
+➛ /help: PM's you this message.
+➛ /help <module name>: PM's you info about that module.
+➛ /donate: information on how to donate!
+➛ /settings:
+➛ in PM: will send you your settings for all supported modules.
+➛ in a group: will redirect you to pm, with all that chat's settings.
+"""
 
-DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,
-  ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
+DONATE_STRING = f"""✨ Hey there!
+We're thrilled that you're considering supporting this project! You can contribute in the following ways:
+💵 Financial Support: Donate via [Phonepe](t.me/Tait3nX).
+🤝 Join the Development Team: If monetary support isn’t an option, you can still help us improve the bot by contributing to development! Connect with us at [Support Channel](t.me/TaitanXBot)
+💡 Need more information or assistance? Reach out to [SupportGroup](t.me/TaitanXSupportGroup) anytime!
+Thank you for being a part of our journey! 🚀
 
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ  ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
-
+"""
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
