@@ -102,7 +102,7 @@ HELP_STRINGS = f"""
 ➛ /donate: information on how to donate!
 ➛ /settings:
 ➛ in PM: will send you your settings for all supported modules.
-➛ in a group: will redirect you to pm, with all that chat's settings.
+➛ in a group: will redirect you to pm, with all that chat's settings[!](https://files.catbox.moe/s1caf2.jpg)
 """
 
 DONATE_STRING = f"""✨ Hey there!
@@ -163,13 +163,14 @@ for module_name in ALL_MODULES:
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
-        dispatcher.bot.send_photo(
-        chat_id=chat_id,
-        photo=START_IMG,
-        caption=text,
-        parse_mode=ParseMode.MARKDOWN,
-        reply_markup=keyboard,
-    )
+        update.effective_message.reply_text(
+            text.format(
+            escape_markdown(first_name),
+            escape_markdown(context.bot.first_name),
+           ),
+           parse_mode=ParseMode.MARKDOWN,
+           reply_markup=InlineKeyboardMarkup(keyboard),
+)
 def start(update: Update, context: CallbackContext):
     args = context.args
     global uptime
