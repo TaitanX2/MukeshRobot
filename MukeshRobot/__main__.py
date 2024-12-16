@@ -69,16 +69,12 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-PM_START_TEXT = """
-────「 [{}](https://files.catbox.moe/s1caf2.jpg) 」────
-
-*Hola! {},*
-*I am an Anime themed advance group management bot with a lot of Cool Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+PM_START_TEXT = """ 
+*Hola!* {}, I'M [Akira【あきら】](https://files.catbox.moe/s1caf2.jpg)an Anime themed advance group management bot with a lot of Cool Features.*
+────────────────────
+➲ An anime-themed group management bot with an Akira Lane theme.
+────────────────────
+✦ Click the button below to learn more how to use me*
 """
 
 buttons = [
@@ -157,7 +153,6 @@ def send_help(chat_id, text, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     dispatcher.bot.send_photo(
         chat_id=chat_id,
-        photo=START_IMG,
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=keyboard,
