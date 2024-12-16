@@ -74,41 +74,61 @@ PM_START_TEX = """
 """
 
 
-PM_START_TEXT = """ 
-*ʜᴇʏ* {} , 🥀
-*๏ ɪ'ᴍ {} ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!
-ʜɪᴛ ʜᴇʟᴘ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ɪɴ ᴍʏ ғᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ!*
-➻ *ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
+PM_START_TEXT = """
+────「 [{}](https://files.catbox.moe/s1caf2.jpg) 」────
+
+*Hola! {},*
+*I am an Anime themed advance group management bot with a lot of Cool Features.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ *Uptime:* `{}`
+❍ `{}` *users, across* `{}` *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Try The Help Buttons Below To Know My Abilities ××
 """
 
 buttons = [
     [
-        
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
+        InlineKeyboardButton(text="About 𝖠𝗄𝗂𝗋𝖺", callback_data="mukesh_"),
+    ],
+    [
+        InlineKeyboardButton(text="❔ Help", callback_data="Main_help"),
+        InlineKeyboardButton(text="📢 Updates", url="https://t.me/TaitanXBot"),
+    ],
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
+            text="➕ Add 𝖠𝗄𝗂𝗋𝖺 to your group ➕",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
-    [
-        InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
-    ],
+]
     
 
 ]
 
 HELP_STRINGS = f"""
-» *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
+*Main* commands available:
+➛ /help: PM's you this message.
+➛ /help <module name>: PM's you info about that module.
+➛ /donate: information on how to donate!
+➛ /settings:
+   ➛ in PM: will send you your settings for all supported modules.
+   ➛ in a group: will redirect you to pm, with all that chat's settings.
+"""
 
-DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,
-  ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
+DONATE_STRING = f"""✨ Hey there!
 
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ  ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+We're thrilled that you're considering supporting this project! You can contribute in the following ways:
+
+💵 Financial Support: Donate via [Phonepe](t.me/Tait3nX).
+
+🤝 Join the Development Team: If monetary support isn’t an option, you can still help us improve the bot by contributing to development! Connect with us at [Support Channel](t.me/TaitanXBot)
+
+
+💡 Need more information or assistance? Reach out to [SupportGroup](t.me/TaitanXSupportGroup) anytime!
+
+Thank you for being a part of our journey! 🚀
+
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -162,7 +182,6 @@ def send_help(chat_id, text, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     dispatcher.bot.send_photo(
         chat_id=chat_id,
-        photo=START_IMG,
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=keyboard,
@@ -351,91 +370,116 @@ def help_button(update, context):
 
 def Mukesh_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    
+
     if query.data == "mukesh_":
         uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_caption(f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
-            "\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ.*"
-            "\n*ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ.*"
-            "\n\n────────────────────"
-            f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
-            f"\n* ᴜꜱᴇʀꜱ : {len(get_served_users())} ",
-            f"\n* ᴄʜᴀᴛs : {len(get_served_chats())} ",
-            "\n────────────────────"
-            "\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
-            "\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
-            "\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ."
-            "\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ."
-            "\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ."
-            f"\n\n➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ {dispatcher.bot.first_name}.",
-            parse_mode=ParseMode.MARKDOWN,
-            
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
-                    [
-                        InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                        InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
-                    ],
-                ]
+        query.message.edit_caption(
+            caption=(
+                f"*Hey Again!*\n\n"
+                f"I'm a group management bot with an anime theme, built to help you manage your group easily.\n\n"
+                f"**I can do a lot of stuff, some of them are:**\n"
+                f"❂ Restrict users who flood your chat using my anti-flood module.\n"
+                f"❂ Safeguard your group with the advanced and handy anti-spam system.\n"
+                f"❂ Greet users with media + text and buttons, with proper formatting.\n"
+                f"❂ Save notes and filters with proper formatting and reply markup.\n\n"
+                f"[**Join Channel**](https://t.me/TaitanXBot) to stay updated with Akira.\n\n"
+                f"**NOTE:** I need to be promoted with proper admin permissions to function properly.\n\n"
+                f"Check the **Setup Guide** to learn about setting up the bot, and use **Help** to learn more."
             ),
-        )
-    elif query.data == "mukesh_support":
-        query.message.edit_caption("**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀ**"
-            f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
-                    [
                         InlineKeyboardButton(
-                            text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="Setup Guide", callback_data="setup_guide"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs 🍷", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x2E\x6D\x65\x2F\x6D\x75\x6B\x65\x73\x68\x62\x6F\x74\x7A\x6F\x6E\x65"
+                            text="Terms & Conditions", url="https://telegra.ph/Akira-Robot-12-16"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="❔ Help", callback_data="Main_help"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ 🍹", url="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x6E\x6F\x6F\x62\x2D\x6D\x75\x6B\x65\x73\x68"
+                            text="Support", url="https://t.me/TaitanXSupportGroup"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_"),
+                        InlineKeyboardButton(
+                            text="Back", callback_data="mukesh_back"
+                        ),
                     ],
                 ]
             ),
         )
+    elif query.data == "setup_guide":
+    query.message.edit_caption(
+        "「 〃 Setup Guide 〃 」\n\n"
+        "You can add me to your chatroom by clicking this and selecting the chat.\n\n"
+        "Read Admin Permissions and Anti-spam for basic information.\n\n"
+        "Read Setup Guide to learn about setting up the bot in detail. (Recommended)\n\n"
+        "If you do need help with further instructions, feel free to ask in @TaitanXSupportGroup.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="Admin Permission", callback_data="admin_prm"
+                    ),
+                    InlineKeyboardButton(
+                        text="Anti-Spam", callback_data="anti_prm"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                ],
+            ]
+        ),
+    )
+    elif query.data == "admin_prm":
+    query.message.edit_caption(
+        "「 〃 Admin Permissions 〃 」\n\n"
+        "To avoid slowing down, Akira caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the `/promote` command), Akira will only find out ~10 minutes later.\n\n"
+        "If you want to update them immediately, you can use the `/admincache` or `/reload` command, that will force Akira to check who the admins are again and their permissions.\n\n"
+        "If you are getting a message saying:\n"
+        "You must be this chat administrator to perform this action!\n\n"
+        "This has nothing to do with Akira's rights; this is all about YOUR permissions as an admin. Akira respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Akira. Similarly, to change Akira settings, you need to have the change group info permission.\n"
+        "The message very clearly says that you need these rights - not Akira.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="❔ Help", callback_data="Main_help"
+                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                ],
+            ]
+        ),
+    )
+    elif query.data == "anti_prm":
+    query.message.edit_caption(
+        "「 〃 Anti-Spam Settings 〃 」\n\n"
+        "Antispam:\n"
+        "By enabling this, you can protect your groups free from scammers/spammers. Run `/antispam` in your chat to enable.\n\n"
+        "❂ Anti-Flood allows you to keep your chat clean from flooding.\n"
+        "❂ With the help of Blacklist you can blacklist words, sentences, and stickers which you don't want to be used by group members.\n"
+        "❂ By enabling reports, admins get notified when users report in chat.\n"
+        "❂ Locks allow you to lock/restrict some command items in the telegram world.\n"
+        "❂ Warnings allow you to warn users and set auto-warns.\n"
+        "❂ Welcome mute helps you prevent spambots or users flooding/spamming your group. Check Greetings for more info.\n\n"
+        "Appeal chat for Anti-Spam: @TaitanXSupportGroup.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="❔ Help", callback_data="Main_help"
+                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                ],
+            ]
+        ),
+    )
     elif query.data == "mukesh_back":
         first_name = update.effective_user.first_name 
         query.message.edit_caption(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
