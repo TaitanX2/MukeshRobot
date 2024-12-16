@@ -428,12 +428,14 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ),
                 ],
                 [
-                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                    InlineKeyboardButton(
+                        text="Back", callback_data="mukesh_"
+                    ),
                 ],
             ]
         ),
     )
-    elif query.data == "admin_prm":
+elif query.data == "admin_prm":
     query.message.edit_caption(
         "「 〃 Admin Permissions 〃 」\n\n"
         "To avoid slowing down, Akira caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the `/promote` command), Akira will only find out ~10 minutes later.\n\n"
@@ -448,12 +450,15 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         text="❔ Help", callback_data="Main_help"
-                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                    ),
+                    InlineKeyboardButton(
+                        text="Back", callback_data="mukesh_"
+                    ),
                 ],
             ]
         ),
     )
-    elif query.data == "anti_prm":
+elif query.data == "anti_prm":
     query.message.edit_caption(
         "「 〃 Anti-Spam Settings 〃 」\n\n"
         "Antispam:\n"
@@ -471,12 +476,15 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         text="❔ Help", callback_data="Main_help"
-                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                    ),
+                    InlineKeyboardButton(
+                        text="Back", callback_data="mukesh_"
+                    ),
                 ],
             ]
         ),
     )
-    elif query.data == "mukesh_back":
+elif query.data == "mukesh_back":
         first_name = update.effective_user.first_name 
         query.message.edit_caption(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
             reply_markup=InlineKeyboardMarkup(buttons),
