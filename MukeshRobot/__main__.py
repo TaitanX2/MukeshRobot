@@ -163,8 +163,9 @@ for module_name in ALL_MODULES:
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
-        dispatcher.bot.send_text(
+        dispatcher.bot.send_photo(
         chat_id=chat_id,
+        photo=START_IMG,
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=keyboard,
