@@ -387,27 +387,6 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-     
-    elif query.data == "admin_prm":
-        query.message.edit_caption(
-        "「 〃 Admin Permissions 〃 」\n\n"
-        "To avoid slowing down, Akira caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the `/promote` command), Akira will only find out ~10 minutes later.\n\n"
-        "If you want to update them immediately, you can use the `/admincache` or `/reload` command, that will force Akira to check who the admins are again and their permissions.\n\n"
-        "If you are getting a message saying:\n"
-        "You must be this chat administrator to perform this action!\n\n"
-        "This has nothing to do with Akira's rights; this is all about YOUR permissions as an admin. Akira respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Akira. Similarly, to change Akira settings, you need to have the change group info permission.\n"
-        "The message very clearly says that you need these rights - not Akira.",
-        parse_mode=ParseMode.MARKDOWN,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        text="❔ Help", callback_data="Main_help"
-                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
-                ],
-            ]
-        ),
-    )
     elif query.data == "mukesh_support":
         query.message.edit_caption("**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀ**"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
