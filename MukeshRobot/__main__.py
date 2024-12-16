@@ -347,53 +347,90 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
     
     if query.data == "mukesh_":
         uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_caption(f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
-            "\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ.*"
-            "\n*ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ.*"
-            "\n\n────────────────────"
-            f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
-            f"\n* ᴜꜱᴇʀꜱ : {len(get_served_users())} ",
-            f"\n* ᴄʜᴀᴛs : {len(get_served_chats())} ",
-            "\n────────────────────"
-            "\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
-            "\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
-            "\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ."
-            "\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ."
-            "\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ."
-            f"\n\n➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ {dispatcher.bot.first_name}.",
+        query.message.edit_caption(
+            caption=(
+                f"*Hey Again!*\n\n"
+                f"I'm a group management bot with an anime theme, built to help you manage your group easily.\n\n"
+                f"**I can do a lot of stuff, some of them are:**\n"
+                f"❂ Restrict users who flood your chat using my anti-flood module.\n"
+                f"❂ Safeguard your group with the advanced and handy anti-spam system.\n"
+                f"❂ Greet users with media + text and buttons, with proper formatting.\n"
+                f"❂ Save notes and filters with proper formatting and reply markup.\n\n"
+                f"[**Join Channel**](https://t.me/TaitanXBot) to stay updated with Akira.\n\n"
+                f"**NOTE:** I need to be promoted with proper admin permissions to function properly.\n\n"
+                f"Check the **Setup Guide** to learn about setting up the bot, and use **Help** to learn more."
+            ),
             parse_mode=ParseMode.MARKDOWN,
-            
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
-                    [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
+                            text="Setup Guide", callback_data="setup_guide"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
+                            text="Terms & Conditions", url="https://telegra.ph/Akira-Robot-12-16"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="❔ Help", callback_data="Main_help"
                         ),
                         InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
+                            text="Support", url="https://t.me/TaitanXSupportGroup"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
+                        InlineKeyboardButton(
+                            text="Back", callback_data="mukesh_back"
+                        ),
                     ],
                 ]
             ),
         )
+     elif query.data == "setup_guide":
+    query.message.edit_caption(
+        "「 〃 Setup Guide 〃 」\n\n"
+        "You can add me to your chatroom by clicking this and selecting the chat.\n\n"
+        "Read Admin Permissions and Anti-spam for basic information.\n\n"
+        "Read Setup Guide to learn about setting up the bot in detail. (Recommended)\n\n"
+        "If you do need help with further instructions, feel free to ask in @TaitanXSupportGroup.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="Admin Permission", callback_data="admin_prm"
+                    ),
+                    InlineKeyboardButton(
+                        text="Anti-Spam", callback_data="anti_prm"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                ],
+            ]
+        ),
+    )
+    elif query.data == "admin_prm":
+    query.message.edit_caption(
+        "「 〃 Admin Permissions 〃 」\n\n"
+        "To avoid slowing down, Akira caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the `/promote` command), Akira will only find out ~10 minutes later.\n\n"
+        "If you want to update them immediately, you can use the `/admincache` or `/reload` command, that will force Akira to check who the admins are again and their permissions.\n\n"
+        "If you are getting a message saying:\n"
+        "You must be this chat administrator to perform this action!\n\n"
+        "This has nothing to do with Akira's rights; this is all about YOUR permissions as an admin. Akira respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Akira. Similarly, to change Akira settings, you need to have the change group info permission.\n"
+        "The message very clearly says that you need these rights - not Akira.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="❔ Help", callback_data="Main_help"
+                    InlineKeyboardButton(text="Back", callback_data="mukesh_"),
+                ],
+            ]
+        ),
+    )
     elif query.data == "mukesh_support":
         query.message.edit_caption("**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀ**"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
