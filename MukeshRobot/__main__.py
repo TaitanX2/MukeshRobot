@@ -101,10 +101,6 @@ buttons = [
         ),
     ],
 ]
-    
-
-]
-
 HELP_STRINGS = f"""
 *Main* commands available:
 ➛ /help: PM's you this message.
