@@ -388,14 +388,14 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             ),
         )
      elif query.data == "setup_guide":
-         query.message.edit_caption(
-         "「 〃 Setup Guide 〃 」\n\n"
-         "You can add me to your chatroom by clicking this and selecting the chat.\n\n"
-         "Read Admin Permissions and Anti-spam for basic information.\n\n"
-         "Read Setup Guide to learn about setting up the bot in detail. (Recommended)\n\n"
-         "If you do need help with further instructions, feel free to ask in @TaitanXSupportGroup.",
-         parse_mode=ParseMode.MARKDOWN,
-         reply_markup=InlineKeyboardMarkup(
+    query.message.edit_caption(
+        "「 〃 Setup Guide 〃 」\n\n"
+        "You can add me to your chatroom by clicking this and selecting the chat.\n\n"
+        "Read Admin Permissions and Anti-spam for basic information.\n\n"
+        "Read Setup Guide to learn about setting up the bot in detail. (Recommended)\n\n"
+        "If you do need help with further instructions, feel free to ask in @TaitanXSupportGroup.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
